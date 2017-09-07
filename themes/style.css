@@ -1,0 +1,7 @@
+.text-center {
+  text-align: center;
+}
+
+.spectacle-slide {
+  background: linear-gradient(141deg, #bff5ff 10%, #bff5ff 40%, #98efff 75%);
+}

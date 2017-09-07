@@ -1,0 +1,18 @@
+class HelloMessage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: 1 };
+  }
+
+  render() {
+    return (
+      <div>
+        <div>
+          state.value is <b>{this.state.value}</b>
+        </div>
+      </div>
+    );
+  }
+}
+
+render(<HelloMessage />, mountNode);

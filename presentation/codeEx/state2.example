@@ -1,0 +1,31 @@
+class HelloMessage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 1,
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => {
+      return {
+        value: prevState.value + 1,
+      };
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <div>
+          state.value is <b>{this.state.value}</b>
+        </div>
+        <button onClick={this.handleClick}>Click Me</button>
+      </div>
+    );
+  }
+}
+
+render(<HelloMessage />, mountNode);

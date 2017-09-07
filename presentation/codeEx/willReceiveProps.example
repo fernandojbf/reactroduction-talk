@@ -1,0 +1,19 @@
+class SomeComponent extends React.Component {
+  constructor(props) {
+    super(props); // this is required
+    this.state = {
+      isEven: props.value % 2 === 0,
+      hidden: false,
+    };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.setState(() => ({
+      isEven: nextProps.value % 2 === 0,
+    }));
+  }
+
+  render() {
+    // code ...
+  }
+}

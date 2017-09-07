@@ -1,0 +1,7 @@
+class HelloMessage extends React.Component {
+  render() {
+    return <div>Hello world</div>;
+  }
+}
+
+render(<HelloMessage />, mountNode);

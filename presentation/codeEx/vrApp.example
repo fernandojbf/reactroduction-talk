@@ -1,0 +1,6 @@
+npm install -g react-vr-cli
+
+react-vr init WelcomeToVR
+
+cd WelcomeToVR
+npm start
